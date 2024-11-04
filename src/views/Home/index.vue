@@ -29,39 +29,33 @@
                 <v-list :items="items"></v-list>
             </v-navigation-drawer>
 
-            <v-main style="height: 100vh; ">
+            <v-main>
                 <div class="main-content">
                     <v-card variant="outlined">
 
                         <v-card-text>
-                            <div class="d-flex justify-content-between">
-                                <div>
-                                    <h1>I am <b>Joel M John </b><br />
+                            <div class="d-flex flex-column flex-md-row justify-content-between">
+                                <div class="text-center text-md-left">
+                                    <h1>I am <b>Joel M John</b><br />
                                         Front End Developer
                                     </h1>
                                     Half a decade experience in software development
-                                    <br />
-                                    <br />
-                                    <br />
-                                    <br />
-                                    <br />
-                                    <br />
-                                    <br />
-                                    <br />
-                                    <br />
-
-                                    <v-btn variant="flat" color="grey-lighten-5">
-                                        Connect with me
-                                    </v-btn> &nbsp;
-                                    <v-btn prepend-icon="$vuetify" variant="flat" color="deep-purple-darken-4">
-                                        Download Resume
-                                    </v-btn>
                                 </div>
-                                <div>
-                                    <v-avatar color="grey" rounded="5" size="350">
+                                <div class="d-flex justify-center mt-4 mt-md-0">
+                                    <v-avatar color="grey" rounded="5" size="250">
                                         <v-img src="https://cdn.vuetifyjs.com/images/profiles/marcus.jpg" cover></v-img>
                                     </v-avatar>
                                 </div>
+                            </div>
+                            <div class="d-flex flex-column flex-md-row align-items-md-start align-items-center mt-4">
+                                <v-btn variant="flat" color="grey-lighten-5" prepend-icon="mdi-linkedin"
+                                    href="https://www.linkedin.com/in/joel-m-john-308a83137/" target="_blank"
+                                    class="mb-2">
+                                    Connect with me
+                                </v-btn>
+                                <v-btn prepend-icon="$vuetify" variant="flat" color="deep-purple-darken-4">
+                                    Download Resume
+                                </v-btn>
                             </div>
 
                         </v-card-text>
@@ -69,6 +63,27 @@
                     </v-card>
 
                 </div>
+                <div class="main-content">
+                    <v-row justify="center" align="center">
+                        <v-col sm="4" class="d-flex justify-center align-center">
+                            <v-card class="small-card ">
+                                <v-card-title class="text-center">4.5 Years Experience</v-card-title>
+                            </v-card>
+                        </v-col>
+                        <v-col sm="4" class="d-flex justify-center align-center">
+                            <v-card class="small-card " color="deep-purple-accent-4">
+                                <v-card-title class="text-center">500+ Features</v-card-title>
+                            </v-card>
+                        </v-col>
+                        <v-col sm="4" class="d-flex justify-center align-center">
+                            <v-card class="small-card ">
+                                <v-card-title class="text-center">15 Member Teams</v-card-title>
+                            </v-card>
+                        </v-col>
+                    </v-row>
+                </div>
+                <hr />
+
             </v-main>
         </v-layout>
     </v-app>
@@ -93,5 +108,7 @@ const items = ['apple', 'mango'];
 </script>
 
 <style scoped>
-/* Add any specific styles you need */
+.small-card {
+    max-width: 300px;
+}
 </style>

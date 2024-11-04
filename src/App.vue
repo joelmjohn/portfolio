@@ -18,7 +18,9 @@
 }
 
 .v-card {
+  padding: 25px !important;
   width: 1400px;
   border-radius: 20px !important;
+  overflow-x: auto !important;
 }
 </style>
